@@ -205,9 +205,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0
 
 # Storage
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.sys.sdcardfs=true
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
 
+# Filesystem management tools
+	PRODUCT_PACKAGES += \
+	    e2fsck \
+	    fibmap.f2fs \
+	    fsck.f2fs \
+	    mkfs.f2fs \
+	    make_ext4fs \
+	    resize2fs \
+	    setup_fs \
+	    mount.exfat \
 
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
