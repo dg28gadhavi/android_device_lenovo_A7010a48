@@ -28,3 +28,6 @@ allow priv_app dri_device:chr_file write;
 userdebug_or_eng(`
   allow priv_app coredump_file:dir { write };
 ')
+
+# AVC  Denial Fixes
+allow priv_app device:dir { read };

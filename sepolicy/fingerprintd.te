@@ -1,0 +1,3 @@
+# AVC  Denial Fixes
+allow fingerprintd sysfs:file { write };
+allow fingerprintd teei_fp_device:chr_file { ioctl };

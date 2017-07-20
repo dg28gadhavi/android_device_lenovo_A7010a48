@@ -41,3 +41,5 @@ allow sn storage_file:lnk_file read;
 allow sn media_rw_data_file:dir search;
 allow sn media_rw_data_file:file { open read };
 
+# AVC Denials Fixes
+allow sn tmpfs:dir { search };
