@@ -1,7 +1,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Lenovo A7010"
+#define BTM_DEF_LOCAL_NAME   "Lenovo A7010a48"
 #define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
 
 #endif

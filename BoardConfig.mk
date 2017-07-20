@@ -120,7 +120,7 @@ TARGET_KMODULES := true
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
 # Display
-BOARD_EGL_CFG := /vendor/mtk/a7010/vendor/lib/egl/egl.cfg
+BOARD_EGL_CFG := /vendor/lenovo/A7010a48/vendor/lib/egl/egl.cfg
 USE_OPENGL_RENDERER:=true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
@@ -188,7 +188,7 @@ BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
 
 # RIL
 SIM_COUNT := 2
-BOARD_RIL_CLASS := ../../../device/mtk/a7010/ril
+BOARD_RIL_CLASS := ../../../device/lenovo/A7010a48/ril
 
 # Wireless
 BOARD_WLAN_DEVICE := MediaTek
@@ -226,7 +226,7 @@ BOARD_SEPOLICY_DIRS += \
     device/lenovo/A7010a48/sepolicy
     
 # Seccomp filter
-BOARD_SECCOMP_POLICY += device/mtk/a7010/seccomp
+BOARD_SECCOMP_POLICY += device/lenovo/A7010a48/seccomp
     
 # Graphics
 MTK_GPU_VERSION := mali midgard r12p1
