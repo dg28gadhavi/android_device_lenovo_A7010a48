@@ -1,5 +1,5 @@
 # mt6753 platform boardconfig
-LOCAL_PATH := device/mtk/a7010
+LOCAL_PATH := device/lenovo/A7010a48
 
 MTK_PROJECT_CONFIG ?= $(LOCAL_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
@@ -55,7 +55,7 @@ MTK_KERNEL_PREBUILD:=no
 ifneq ($(MTK_KERNEL_PREBUILD),yes)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CONFIG := k5fpr_defconfig
-TARGET_KERNEL_SOURCE := kernel/mtk/kernel-3.19
+TARGET_KERNEL_SOURCE := kernel/lenovo/A7010a48
 else
 # Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
@@ -223,7 +223,7 @@ TARGET_NO_RECOVERY := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/mtk/a7010/sepolicy
+    device/lenovo/A7010a48/sepolicy
     
 # Seccomp filter
 BOARD_SECCOMP_POLICY += device/mtk/a7010/seccomp

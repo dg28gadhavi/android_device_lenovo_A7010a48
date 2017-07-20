@@ -15,7 +15,7 @@
 #
 
 for flavor in eng userdebug user; do
-    add_lunch_combo "cm_a7010-${flavor}"
+    add_lunch_combo "lineage_A7010a48-${flavor}"
 done
 
 

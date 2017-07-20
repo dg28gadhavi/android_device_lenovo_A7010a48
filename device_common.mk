@@ -1,4 +1,4 @@
-LOCAL_PATH := device/mtk/a7010
+LOCAL_PATH := device/lenovo/A7010a48
 
 MTK_PROJECT_CONFIG ?= $(LOCAL_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
@@ -24,7 +24,7 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/mtk/a7010/a7010-vendor-blobs.mk)
+$(call inherit-product, vendor/lenovo/A7010a48/A7010a48-vendor-blobs.mk)
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
@@ -50,8 +50,8 @@ TARGET_BOOTANIMATION_NAME := 1080
 PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-PRODUCT_DEFAULT_LANGUAGE := ru
-PRODUCT_DEFAULT_REGION   := RU
+PRODUCT_DEFAULT_LANGUAGE := en-US
+PRODUCT_DEFAULT_REGION   := en-US
 
 # Permissions
 PRODUCT_COPY_FILES += \
