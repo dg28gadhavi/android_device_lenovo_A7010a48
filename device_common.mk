@@ -219,6 +219,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	    setup_fs \
 	    mount.exfat \
 
+# Properties
+	PRODUCT_PROPERTY_OVERRIDES += \
+	    ro.sys.fw.dex2oat_thread_count=4
+
+#Dex2oat Limits
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-threads=6 \
+    dalvik.vm.image-dex2oat-threads=8
+
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
