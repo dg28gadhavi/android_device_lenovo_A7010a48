@@ -194,7 +194,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # IO Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
-    sys.io.scheduler=cfq
+    sys.io.scheduler=zen
  
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
