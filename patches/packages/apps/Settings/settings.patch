@@ -73,14 +73,6 @@ index cba4865..c7f5fa3 100644
          if (!SELinux.isSELinuxEnabled()) {
              String status = getResources().getString(R.string.selinux_status_disabled);
              setStringSummary(KEY_SELINUX_STATUS, status);
-@@ -308,6 +312,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
-                         + "queryIntentActivities() returns empty" );
-                 return true;
-             }
- 
-         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
-             sendFeedback();
-         } else if(preference.getKey().equals(KEY_SYSTEM_UPDATE_SETTINGS)) {
--- 
+--
 2.7.4
 
