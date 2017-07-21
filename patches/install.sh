@@ -2,7 +2,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="bionic packages/apps/Settings  hardware/libhardware "
+dirs="bionic framework/base packages/apps/Settings  hardware/libhardware "
 
 for dir in $dirs ; do
 	cd $rootdirectory
