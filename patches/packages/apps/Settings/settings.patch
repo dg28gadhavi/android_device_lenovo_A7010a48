@@ -45,7 +45,7 @@ index f756b26..0f87d0b 100644
 +                android:title="@string/author_info"
 +                android:summary="@string/author_info_default">
 +                <intent android:action="android.intent.action.VIEW"
-+                        android:data="https://forum.xda-developers.com/member.php?u=7471004" />
++                        android:data="https://forum.xda-developers.com/member.php?u=7709767" />
 +        </PreferenceScreen>
 +
          <!-- Device FCC equipment id -->
