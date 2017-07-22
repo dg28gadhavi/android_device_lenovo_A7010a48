@@ -1,0 +1,35 @@
+From 4b95c9e76e8683df675fb19c84f8a0594b9a82a3 Mon Sep 17 00:00:00 2001
+From: Dhruv <dg28gadhavi@gmail.com>
+Date: Thu, 20 Jul 2017 05:49:50 +0530
+Subject: [PATCH] MTK patches-DIALER
+
+---
+ InCallUI/src/com/android/incallui/InCallPresenter.java | 2 +-
+ src/com/android/dialer/calllog/MissedCallNotifier.java | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/InCallUI/src/com/android/incallui/InCallPresenter.java b/InCallUI/src/com/android/incallui/InCallPresenter.java
+index 6b188db..686a617 100644
+--- a/InCallUI/src/com/android/incallui/InCallPresenter.java
++++ b/InCallUI/src/com/android/incallui/InCallPresenter.java
+@@ -745,7 +745,7 @@ public void onIncomingCall(Call call) {
+             mInCallActivity.updateDsdaTab();
+         }
+         if (isActivityStarted()) {
+-            wakeUpScreen();
++        wakeUpScreen();
+         }
+     }
+ 
+diff --git a/src/com/android/dialer/calllog/MissedCallNotifier.java b/src/com/android/dialer/calllog/MissedCallNotifier.java
+index f683016..732f656 100644
+--- a/src/com/android/dialer/calllog/MissedCallNotifier.java
++++ b/src/com/android/dialer/calllog/MissedCallNotifier.java
+@@ -148,6 +148,7 @@ public void updateMissedCallNotification(int count, String number) {
+                 .setContentIntent(createCallLogPendingIntent())
+                 .setAutoCancel(true)
+                 .setWhen(timeMs)
++                .setDefaults(Notification.DEFAULT_VIBRATE)
+                 .setDeleteIntent(createClearMissedCallsPendingIntent())
+                 // Include a public version of the notification to be shown when the missed call
+                 // notification is shown on the user's lock screen and they have chosen to hide
