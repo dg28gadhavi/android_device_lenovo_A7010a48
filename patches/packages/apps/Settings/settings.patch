@@ -20,6 +20,8 @@ index 3e93d41..a352391 100644
      <string name="device_info_default">Unknown</string>
 +    <!-- Device Info screen. Used for a status item's value when the proper value is not known -->
 +    <string name="author_info_default">Dhruv Gadhavi</string>
++    <!-- Device Info screen. Used for a status item's value when the proper value is not known -->
++    <string name="donate_info_default">Tap here and Scan the QR code via Paytm app and donate me</string>
      <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
      <plurals name="show_dev_countdown">
          <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from being a developer.</item>
@@ -29,6 +31,8 @@ index 3e93d41..a352391 100644
      <string name="security_patch">Android security patch level</string>
 +    <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
 +    <string name="author_info">Build author</string>
++    <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
++    <string name="author_info">Donate Me</string>
      <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
      <string name="model_info">Model</string>
      <!-- About phone screen, fcc equipment id label  [CHAR LIMIT=40] -->
@@ -48,6 +52,14 @@ index f756b26..0f87d0b 100644
 +                        android:data="https://forum.xda-developers.com/member.php?u=7709767" />
 +        </PreferenceScreen>
 +
++        <!-- Donate Info -->
++        <PreferenceScreen android:key="donate_info"
++                android:title="@string/donate_info"
++                android:summary="@string/donate_info_default">
++                <intent android:action="android.intent.action.VIEW"
++                        android:data="https://preview.ibb.co/h9DtOF/1497055355988.jpg" />
++        </PreferenceScreen>
++
          <!-- Device FCC equipment id -->
          <com.android.settings.DividerPreference
                  android:key="fcc_equipment_id"
@@ -60,6 +72,7 @@ index cba4865..c7f5fa3 100644
      private static final String KEY_FIRMWARE_VERSION = "firmware_version";
      private static final String KEY_SECURITY_PATCH = "security_patch";
 +    private static final String KEY_AUTHOR_INFO = "author_info";
++    private static final String KEY_DONATE_INFO = "donate_info";
      private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
      private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
      private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
@@ -69,6 +82,9 @@ index cba4865..c7f5fa3 100644
  
 +	String author_info = getResources().getString(R.string.author_info_default);
 +	setStringSummary(KEY_AUTHOR_INFO, author_info);
++
++	String donate_info = getResources().getString(R.string.donate_info_default);
++	setStringSummary(KEY_DONATE_INFO, donate_info);
 +
          if (!SELinux.isSELinuxEnabled()) {
              String status = getResources().getString(R.string.selinux_status_disabled);
