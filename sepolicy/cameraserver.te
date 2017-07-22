@@ -498,4 +498,4 @@ allow cameraserver sdcardfs:file { create_file_perms };
 allow cameraserver sysfs:file getattr;
 
 # AVC  Denial Fixes
-allow cameraserver device:chr_file { read write };
+# allow cameraserver device:chr_file { read write };
