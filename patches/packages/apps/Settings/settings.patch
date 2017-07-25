@@ -32,7 +32,7 @@ index 3e93d41..a352391 100644
 +    <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
 +    <string name="author_info">Build author</string>
 +    <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
-+    <string name="author_info">Donate Me</string>
++    <string name="donate_info">Donate Me</string>
      <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
      <string name="model_info">Model</string>
      <!-- About phone screen, fcc equipment id label  [CHAR LIMIT=40] -->
