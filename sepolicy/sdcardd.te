@@ -44,6 +44,3 @@ allow sdcardd mmcblk0_block_device:blk_file { read write open };
 # Purpose : for M migration SQC
 typeattribute sdcardd mlstrustedsubject;
 
-# AVC  Denial Fixes
-allow sdcardd unlabeled:dir { getattr };
-allow sdcardd unlabeled:file { getattr };
