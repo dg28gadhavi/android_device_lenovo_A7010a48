@@ -153,8 +153,17 @@ PRODUCT_PACKAGES += \
     charger \
     charger_res_images \
     libnl_2 \
-    libion \
+    libion
+
+#Fingerprint HAL
+PRODUCT_PACKAGES += \
     fingerprintd
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
+
+PRODUCT_PACKAGES += \
+    fingerprint.default
 
 # RIL	
 #PRODUCT_PACKAGES += \
@@ -185,10 +194,10 @@ PRODUCT_PACKAGES += \
 		   
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	ro.mount.fs=EXT4 \
-	ro.adb.secure=0 \
-	ro.secure=0 \
-	ro.allow.mock.location=0 \
-	ro.debuggable=1 \
+# ro.adb.secure=0 \
+# ro.secure=0 \
+# ro.allow.mock.location=0 \
+# ro.debuggable=1 \
 	persist.service.acm.enable=0 \
 	ro.config.low_ram=false
 
