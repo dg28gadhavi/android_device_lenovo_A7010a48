@@ -437,6 +437,8 @@
 /(system\/vendor|vendor)/bin/akmd09911 u:object_r:akmd09911_exec:s0
 /(system\/vendor|vendor)/bin/mxg2320d u:object_r:mxg2320d_exec:s0
 /(system\/vendor|vendor)/bin/akmd8963 u:object_r:akmd8963_exec:s0
+/system/bin/fingerprintd u:object_r:fingerprintd_exec:s0
+/system/bin/gatekeeperd u:object_r:gatekeeperd_exec:s0
 
 /(system\/vendor|vendor)/xbin/MPED u:object_r:MPED_exec:s0
 /(system\/vendor|vendor)/xbin/mtkFlpDaemon u:object_r:mtkFlpDaemon_exec:s0

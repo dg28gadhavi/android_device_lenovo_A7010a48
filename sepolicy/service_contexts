@@ -42,6 +42,8 @@ uniservice-pack             u:object_r:mtk_usp_service:s0
 data_shaping                u:object_r:mtk_data_shaping_service:s0
 running_booster        u:object_r:mtk_running_booster_service:s0
 TestAmPolicyMakerService    u:object_r:mtk_test_ampolicymaker_service:s0
+fingerprint                               u:object_r:fingerprint_service:s0
+android.hardware.fingerprint.IFingerprintDaemon u:object_r:fingerprintd_service:s0
 
 # Other Services
 CrossMountManagerService    u:object_r:mtk_crossmount_service:s0
