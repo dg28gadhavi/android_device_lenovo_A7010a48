@@ -49,3 +49,5 @@ allow autokd userdata_block_device:blk_file rw_file_perms;
 allow autokd nvdata_file:dir rw_dir_perms;
 allow autokd nvdata_file:file create_file_perms;
 
+# AVC Denial Fixes
+allow autokd sysfs:file { read };
