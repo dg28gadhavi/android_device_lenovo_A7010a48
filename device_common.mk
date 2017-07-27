@@ -107,6 +107,10 @@ PRODUCT_COPY_FILES += \
     
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+# Recovery
+BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/recovery.fstab
+
 # RAMDISK
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.project.rc:root/init.project.rc \
