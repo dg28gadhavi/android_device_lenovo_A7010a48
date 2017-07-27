@@ -166,10 +166,10 @@ PRODUCT_PACKAGES += \
     fingerprint.default
 
 # RIL	
-#PRODUCT_PACKAGES += \
-#    gsm0710muxd \
-#    mtkrild \
-#    mtk-ril
+PRODUCT_PACKAGES += \
+    gsm0710muxd \
+    mtkrild \
+    mtk-ril
 
 PRODUCT_PACKAGES += \
     mtk_symbols
@@ -194,10 +194,10 @@ PRODUCT_PACKAGES += \
 		   
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	ro.mount.fs=EXT4 \
-# ro.adb.secure=0 \
-# ro.secure=0 \
-# ro.allow.mock.location=0 \
-# ro.debuggable=1 \
+ ro.adb.secure=0 \
+ ro.secure=0 \
+ ro.allow.mock.location=0 \
+ ro.debuggable=1 \
 	persist.service.acm.enable=0 \
 	ro.config.low_ram=false
 
@@ -252,12 +252,12 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 	
-#PRODUCT_PROPERTY_OVERRIDES += \
-#  service.adb.root=1 \
-#  persist.service.adb.enable=1 \
-#  persist.service.debuggable=1 \
-#  persist.sys.root_access=0 \
-#  persist.sys.usb.config=mtp,adb
+PRODUCT_PROPERTY_OVERRIDES += \
+  service.adb.root=1 \
+  persist.service.adb.enable=1 \
+  persist.service.debuggable=1 \
+  persist.sys.root_access=0 \
+  persist.sys.usb.config=mtp,adb
 
 
 # Keyhandler package
