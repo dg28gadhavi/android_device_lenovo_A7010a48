@@ -1,2 +1,0 @@
-# AVC denials fix
-allow sgdisk fuse_device:chr_file { read write };
