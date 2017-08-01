@@ -33,3 +33,4 @@ index f683016..732f656 100644
                  .setDeleteIntent(createClearMissedCallsPendingIntent())
                  // Include a public version of the notification to be shown when the missed call
                  // notification is shown on the user's lock screen and they have chosen to hide
+

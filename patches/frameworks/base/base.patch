@@ -320,3 +320,4 @@ index 8aa224568be..173161e01e5
      private boolean mScreenOnEnabled = false;
      private boolean mScreenOnDefault = false;
 \ No newline at end of file
+

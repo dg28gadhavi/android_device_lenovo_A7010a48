@@ -1273,3 +1273,4 @@ index ba99d0c14..6cd3f5f29 100644
      hwvulkan_device_t* device;
      result =
          module->common.methods->open(&module->common, HWVULKAN_DEVICE_0,
+
