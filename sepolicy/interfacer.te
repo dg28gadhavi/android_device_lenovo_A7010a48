@@ -1,0 +1,2 @@
+# AVC denials fix
+allow interfacer content_service:service_manager { find };

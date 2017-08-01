@@ -31,3 +31,4 @@ userdebug_or_eng(`
 
 # AVC  Denial Fixes
 allow priv_app device:dir { read };
+allow priv_app storage_stub_file:dir { getattr };
