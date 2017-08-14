@@ -104,3 +104,5 @@ allow init rawfs:file getattr;
 # Purpose : allow insert modules from rootfs
 allow init rootfs:system module_load;
 
+# Avc Denial fix
+allow init ccci_device:chr_file { ioctl };
