@@ -12,7 +12,7 @@ BOARD_GLOBAL_CPPFLAGS += $(MTK_INTERNAL_CDEFS)
 USE_CCACHE:=1
 CCACHE_DIR:=$(LOCAL_PATH)/../../.ccache
 USE_NINJA:=true
-#JACK_SERVER_VM_ARGUMENTS:="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx2560m"
+JACK_SERVER_VM_ARGUMENTS:="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx2560m"
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6753
