@@ -123,8 +123,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.rc:root/init.rc \
     $(LOCAL_PATH)/ramdisk/sbin/busybox:root/sbin/busybox \
     $(LOCAL_PATH)/ramdisk/init.microtrust.rc:root/init.microtrust.rc \
-    $(LOCAL_PATH)/ramdisk/init.connectivity.rc:root/init.connectivity.rc \
-    $(LOCAL_PATH)/ramdisk/init.mt6735.power.rc:root/init.mt6735.power.rc
+    $(LOCAL_PATH)/ramdisk/init.connectivity.rc:root/init.connectivity.rc
+
 
    
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
