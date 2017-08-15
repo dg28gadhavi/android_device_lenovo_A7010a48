@@ -293,4 +293,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
 
+#Cmactions
+PRODUCT_PACKAGES += \
+    CMActions
+
 endif
