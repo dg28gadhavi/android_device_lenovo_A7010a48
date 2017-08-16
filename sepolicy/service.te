@@ -50,3 +50,5 @@ type vtservice_service, service_manager_type;
 type vie_command_service, service_manager_type;
 type mtk_usp_service, app_api_service, system_server_service, service_manager_type;
 
+# AVC Denial fixes
+type theme_service, system_api_service, system_server_service, service_manager_type;
