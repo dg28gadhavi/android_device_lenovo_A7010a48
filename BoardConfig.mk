@@ -78,7 +78,7 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_VARIANT := cortex-a53
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 androidboot.selinux=disabled
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1
 BOARD_KERNEL_OFFSET := 0x00008000
 else
 ARCH := arm64
@@ -95,7 +95,7 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linaro-linux-android-
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=disabled
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 TARGET_USES_64_BIT_BINDER := true
 TARGET_IS_64_BIT :=true
 TARGET_BOARD_SUFFIX := _64

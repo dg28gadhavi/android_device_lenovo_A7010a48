@@ -326,4 +326,4 @@ allow system_server cdma_prop:property_service set;
 
 # AVC  Denial Fixes
 allow system_server user_profile_data_file:dir { read };
-
+allow system_server user_profile_data_file:dir { open };
