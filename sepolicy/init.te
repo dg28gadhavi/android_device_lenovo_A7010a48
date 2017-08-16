@@ -106,3 +106,12 @@ allow init rootfs:system module_load;
 
 # Avc Denial fix
 allow init ccci_device:chr_file { ioctl };
+allow init ccci_device:chr_file { write };
+allow init device:lnk_file { unlink };
+allow init devpts:chr_file { setattr };
+allow init ccci_monitor_device:chr_file { ioctl };
+allow init gsm0710muxd_device:chr_file { write };
+allow init devpts:chr_file { setattr };
+allow init devpts:chr_file { ioctl };
+allow init proc_lk_env:file { ioctl };
+

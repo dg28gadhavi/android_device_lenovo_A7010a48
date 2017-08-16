@@ -137,7 +137,8 @@ unix_socket_connect(untrusted_app, rild_embms, rilproxy)
 # AVC  Denial Fixes
 allow untrusted_app sysfs:dir { read };
 allow untrusted_app mnt_media_rw_file:dir { getattr };
-allow untrusted_app debugfs:file { read };
-allow untrusted_app debugfs:dir { read };
 allow untrusted_app sysfs:dir { open };
 allow untrusted_app sysfs:file { open };
+allow untrusted_app rootfs:dir { read };
+allow untrusted_app rootfs:file { read };
+allow untrusted_app sysfs_zram:dir { search };

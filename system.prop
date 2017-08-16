@@ -41,7 +41,7 @@ ro.zygote.preload.enable=0
 
 persist.sys.strictmode.visual=0
 persist.sys.strictmode.disable=1
-#ro.boot.selinux=disable
+ro.boot.selinux=disable
 #ro.carrier=unknown
 
 # Disable dirty region for Mali
