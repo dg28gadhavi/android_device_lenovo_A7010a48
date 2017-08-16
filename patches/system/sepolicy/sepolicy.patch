@@ -1,0 +1,23 @@
+From cd228825b6726b524456e0178588a95238698759 Mon Sep 17 00:00:00 2001
+From: DHRUV GADHAVI <dg28gadhavi@gmail.com>
+Date: Thu, 17 Aug 2017 00:54:26 +0530
+Subject: [PATCH] MTK patches-SEPOLICY
+
+This patch is somewhat device Specific...
+---
+ domain.te | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/domain.te b/domain.te
+index 59de1f1..2d6ca95 100644
+--- a/domain.te
++++ b/domain.te
+@@ -262,7 +262,7 @@ neverallow { domain -kernel -init -recovery -uncrypt } block_device:blk_file { o
+ # Rather force a relabel to a more specific type.
+ # init is exempt from this as there are character devices that only it uses.
+ # ueventd is exempt from this, as it is managing these devices.
+-neverallow { domain -init -ueventd } device:chr_file { open read write };
++#neverallow { domain -init -ueventd } device:chr_file { open read write };
+ 
+ # Limit what domains can mount filesystems or change their mount flags.
+ # sdcard_type / vfat is exempt as a larger set of domains need
