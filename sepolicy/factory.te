@@ -257,3 +257,6 @@ allow factory mnld_exec:file rx_file_perms;
 # because system_data_file is sensitive partition from M
 allow resize block_device:dir search;
 
+# AVC Denials Fix
+allow factory fm_device:chr_file rwx_file_perms;
+

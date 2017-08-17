@@ -9,3 +9,11 @@
 # this is a issue caused by low memory, so we should add this rule below
 allow wpa platform_app:fd use;
 allow wpa platform_app_tmpfs:file write;
+
+# AVC Denial Fix
+allow wpa wifi_data_file:dir { create };
+allow wpa dhcp_data_file:dir { setattr };
+allow wpa wifi_data_file:dir { setattr };
+allow wpa wifi_data_file:sock_file { create };
+allow wpa wifi_data_file:sock_file { setattr };
+allow wpa wifi_data_file:sock_file { unlink };

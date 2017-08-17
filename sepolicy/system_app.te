@@ -272,3 +272,5 @@ allow system_app cache_recovery_file:file { read write create open getattr unlin
 # Purpose : Allow system app to create a dir in sdcard
 allow system_app vfat:dir create;
 
+# AVC Denials Fix
+allow system_app fm_device:chr_file rw_file_perms;

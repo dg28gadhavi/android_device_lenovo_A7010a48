@@ -499,4 +499,9 @@ allow cameraserver sysfs:file getattr;
 
 # AVC Denials fix
 allow cameraserver device:chr_file { read write };
+allow cameraserver device:chr_file rw_file_perms;
 allow cameraserver sysfs_devinfo:file rw_file_perms;
+allow cameraserver camera_device:chr_file rw_file_perms;
+allow cameraserver nvdata_file:dir rw_dir_perms;
+allow cameraserver nvdata_file:file create_file_perms;
+allow cameraserver ccci_device:chr_file rw_file_perms;
