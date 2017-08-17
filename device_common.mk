@@ -297,4 +297,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CMActions
 
+#Liblights
+PRODUCT_PACKAGES += \
+   lights.mt6753
+
 endif
