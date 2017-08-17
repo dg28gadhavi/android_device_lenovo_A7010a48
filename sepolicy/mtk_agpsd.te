@@ -57,3 +57,11 @@ allow mtk_agpsd rilproxy:unix_dgram_socket sendto;
 allow mtk_agpsd system_server:unix_dgram_socket sendto;
 
 
+# AVC Denials Fix
+
+allow mtk_agpsd tmpfs:dir { search };
+allow mtk_agpsd storage_file:dir search;
+allow mtk_agpsd storage_file:lnk_file read;
+allow mtk_agpsd fuse:dir create_dir_perms;
+allow mtk_agpsd fuse:file create_file_perms;
+unix_socket_send(mtk_agpsd, mnld, mnld);
