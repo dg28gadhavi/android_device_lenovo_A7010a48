@@ -301,9 +301,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    lights.mt6753
 
-# Open GApps
-ifneq ($(HAS_GAPPS),false)
-$(call inherit-product-if-exists, device/lenovo/A7010a48/opengapps.mk)
-$(call inherit-product-if-exists, vendor/google/build/opengapps-packages.mk)
-
 endif
