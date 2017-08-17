@@ -98,3 +98,4 @@ allow mnld mtkFlpDaemon_data_file:sock_file create_file_perms;
 
 # AVC Denials Fix
 allow mnld tmpfs:dir { search };
+allow mnld mnt_user_file:dir { search };
