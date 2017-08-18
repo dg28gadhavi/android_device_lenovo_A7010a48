@@ -9,7 +9,6 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
     icu55.c \
-    mtk_asc.cpp \
     mtk_audio.cpp \
     mtk_fence.cpp \
     mtk_omx.cpp \
