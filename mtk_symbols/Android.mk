@@ -13,7 +13,6 @@ LOCAL_SRC_FILES := \
     mtk_audio.cpp \
     mtk_fence.cpp \
     mtk_omx.cpp \
-    mtk_gui.cpp \
     mtk_ui.cpp
 
 # only for 64bit libraries
