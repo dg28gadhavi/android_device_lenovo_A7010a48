@@ -307,4 +307,10 @@
 
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
+    <!-- If this is true, allow wake from theater mode when plugged in or unplugged. -->
+    <bool name="config_allowTheaterModeWakeFromUnplug">true</bool>
+
+    <!-- If this is true, allow wake from theater mode from camera lens cover is switched. -->
+    <bool name="config_allowTheaterModeWakeFromCameraLens">true</bool>
+
 </resources>
