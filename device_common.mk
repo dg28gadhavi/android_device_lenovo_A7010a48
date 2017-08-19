@@ -140,6 +140,13 @@ PRODUCT_PACKAGES += \
     libtinyalsa \
     libtinycompress
 
+#Camera
+PRODUCT_PACKAGES += \
+    libcamera_parameters_ext
+
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # WiFi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
