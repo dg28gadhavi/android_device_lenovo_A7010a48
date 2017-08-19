@@ -298,4 +298,3 @@ type embms_library_file, file_type, data_file_type;
 
 # AVC Denials Fix
 type sysfs_fingerprintd, fs_type, sysfs_type;
-type pocket_judge_sysfs, fs_type, sysfs_type;
