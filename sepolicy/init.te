@@ -114,4 +114,4 @@ allow init gsm0710muxd_device:chr_file { write };
 allow init devpts:chr_file { setattr };
 allow init devpts:chr_file { ioctl };
 allow init proc_lk_env:file { ioctl };
-
+allow init teei_vfs_device:chr_file rw_file_perms;

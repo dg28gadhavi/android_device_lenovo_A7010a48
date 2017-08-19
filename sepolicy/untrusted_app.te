@@ -149,3 +149,5 @@ allow untrusted_app persist_data_file:dir { getattr };
 allow untrusted_app nvdata_file:dir { getattr };
 allow untrusted_app debuggerd_exec:file { open };
 allow untrusted_app system_data_file:file { read };
+allow untrusted_app proc_iomem:file { getattr };
+allow untrusted_app proc_mrdump_rst:file { getattr };

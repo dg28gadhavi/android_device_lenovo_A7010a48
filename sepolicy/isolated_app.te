@@ -11,4 +11,4 @@ allow isolated_app untrusted_app_tmpfs:file write;
 # AVC  Denial Fixes
 allow isolated_app app_data_file:dir { getattr };
 allow isolated_app shell_data_file:dir { search };
-
+allow isolated_app app_data_file:dir { getattr };
