@@ -127,6 +127,14 @@ on post-fs
     chmod 0770 /protect_s
     mkdir /protect_s/properties 0770 system system
 
+    mkdir /nvdata/APCFG 0770 system camera
+    mkdir /nvdata/APCFG/APRDCL 0770 system camera
+    mkdir /nvdata/APCFG/APRDEB 0770 system camera
+    mkdir /nvdata/md     0770 system radio
+    mkdir /nvdata/md_cmn 0770 system radio
+    mkdir /nvdata/media  0770 media audio
+    restorecon_recursive /nvdata
+
     # NFC
     chmod 0660 /dev/mt6605
     chown radio nfc /dev/mt6605
