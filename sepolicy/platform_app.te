@@ -275,3 +275,36 @@ unix_socket_connect(platform_app, rild_embms, rilproxy)
 # Purpose: comply with Vzw eMBMS operator requirement
 allow platform_app embms_library_file:file create_file_perms;
 allow platform_app embms_library_file:dir rw_dir_perms;
+
+# AVC Denials Fix
+allow platform_app atrace_exec:file getattr;
+allow platform_app audioserver_exec:file getattr;
+allow platform_app blkid_exec:file getattr;
+allow platform_app bootanim_exec:file getattr;
+allow platform_app bootstat_exec:file getattr;
+allow platform_app cameraserver_exec:file getattr;
+allow platform_app clatd_exec:file getattr;
+allow platform_app debuggerd_exec:file getattr;
+allow platform_app device:dir read;
+allow platform_app dnsmasq_exec:file getattr;
+allow platform_app drmserver_exec:file getattr;
+allow platform_app dumpstate_exec:file getattr;
+allow platform_app fingerprintd_exec:file getattr;
+allow platform_app fsck_exec:file getattr;
+allow platform_app gatekeeperd_exec:file getattr;
+allow platform_app hostapd_exec:file getattr;
+allow platform_app idmap_exec:file getattr;
+allow platform_app installd_exec:file getattr;
+allow platform_app keystore_exec:file getattr;
+allow platform_app lmkd_exec:file getattr;
+allow platform_app logd_exec:file getattr;
+allow platform_app mdnsd_exec:file getattr;
+allow platform_app mediacodec_exec:file getattr;
+allow platform_app mediadrmserver_exec:file getattr;
+allow platform_app mediaextractor_exec:file getattr;
+allow platform_app mediaserver_exec:file getattr;
+allow platform_app mkfs_exec:file getattr;
+allow platform_app nvdata_file:dir getattr;
+allow platform_app persist_data_file:dir getattr;
+allow platform_app protect_f_data_file:dir getattr;
+allow platform_app protect_s_data_file:dir getattr;
