@@ -359,3 +359,6 @@ allow radio mtk_em_3gvt_prop:property_service set;
 allow radio atci_service_exec:file getattr;
 allow radio atcid_exec:file getattr;
 allow radio audiocmdservice_atci_exec:file getattr;
+
+# AVC Denials Fix
+allow radio system_app_data_file:dir { getattr };
