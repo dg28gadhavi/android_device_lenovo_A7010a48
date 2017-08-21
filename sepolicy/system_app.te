@@ -275,3 +275,4 @@ allow system_app vfat:dir create;
 # AVC Denials Fix
 allow system_app fm_device:chr_file rw_file_perms;
 allow system_app radio_data_file:dir { getattr };
+allow system_app fingerprintd:binder call;

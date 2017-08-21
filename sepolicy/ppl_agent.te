@@ -78,3 +78,8 @@ allow ppl_agent nvcfg_file:file { read write open getattr };
 # Package name : com.mediatek.ppl.ppl_agent
 allow ppl_agent mtd_device:dir search;
 allow ppl_agent mtd_device:chr_file { read write open };
+
+# AVC Denials Fix
+allow ppl_agent device:dir write;
+allow ppl_agent kmsg_device:chr_file write;
+allow ppl_agent rootfs:file read;

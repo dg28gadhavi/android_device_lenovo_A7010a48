@@ -28,3 +28,6 @@ allow mxg2320d akmd8963_access_file2:file rw_file_perms;
 file_type_auto_trans(mxg2320d, system_data_file, msensor_data_file)
 allow mxg2320d system_data_file:dir create_dir_perms;
 allow mxg2320d msensor_data_file:file create_file_perms;
+
+# AVC denials Fix
+allow mxg2320d system_data_file:file { read };

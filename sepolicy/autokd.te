@@ -52,3 +52,8 @@ allow autokd nvdata_file:file create_file_perms;
 # AVC Denials Fix
 allow autokd sysfs:file { read };
 allow autokd sysfs:file { open };
+allow autokd kmsg_device:chr_file write;
+allow autokd nvram_data_file:lnk_file read;
+allow autokd system_data_file:file { getattr read };
+allow autokd system_prop:property_service set;
+allow autokd toolbox_exec:file getattr;

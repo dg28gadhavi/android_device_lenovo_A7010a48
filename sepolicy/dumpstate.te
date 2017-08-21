@@ -22,5 +22,15 @@ allow dumpstate proc_ged:file {open read write ioctl getattr};
 allow dumpstate GoogleOtaBinder:binder call;
 allow dumpstate ppl_agent:binder call;
 
+# AVC denials Fix
+allow dumpstate debugfs_binder:file read;
+allow dumpstate debugfs_wakeup_sources:file read;
+allow dumpstate fingerprintd:binder call;
+allow dumpstate loop_device:blk_file getattr;
+allow dumpstate nvdata_file:dir getattr;
+allow dumpstate persist_data_file:dir getattr;
+allow dumpstate protect_f_data_file:dir getattr;
+allow dumpstate protect_s_data_file:dir getattr;
+allow dumpstate system_block_device:blk_file getattr;
 
 

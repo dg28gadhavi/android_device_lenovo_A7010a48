@@ -154,3 +154,4 @@ allow untrusted_app proc_mrdump_rst:file { getattr };
 allow untrusted_app sysfs:file read;
 allow untrusted_app sysfs:file getattr;
 allow untrusted_app system_data_file:file { getattr };
+allow untrusted_app rootfs:file getattr;
