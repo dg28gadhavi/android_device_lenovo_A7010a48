@@ -33,3 +33,4 @@ allow sysenv_daemon self:netlink_socket { read bind create };
 
 # AVC denials Fix
 allow sysenv_daemon sysfs:file read;
+allow sysenv_daemon sysfs:file open;

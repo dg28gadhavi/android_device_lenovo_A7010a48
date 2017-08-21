@@ -83,3 +83,6 @@ allow ppl_agent mtd_device:chr_file { read write open };
 allow ppl_agent device:dir write;
 allow ppl_agent kmsg_device:chr_file write;
 allow ppl_agent rootfs:file read;
+allow ppl_agent kmsg_device:chr_file open;
+allow ppl_agent rootfs:file open;
+allow ppl_agent rootfs:file getattr;

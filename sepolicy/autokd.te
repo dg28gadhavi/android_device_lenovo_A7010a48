@@ -57,3 +57,5 @@ allow autokd nvram_data_file:lnk_file read;
 allow autokd system_data_file:file { getattr read };
 allow autokd system_prop:property_service set;
 allow autokd toolbox_exec:file getattr;
+allow autokd system_data_file:file { open };
+allow autokd toolbox_exec:file execute;
