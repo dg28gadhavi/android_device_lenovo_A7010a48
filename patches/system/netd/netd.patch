@@ -1,4 +1,4 @@
-From 73f86a224cb646b0800c1307f7ed784d363fd55a Mon Sep 17 00:00:00 2001
+From 860fdcb60768e18ceafe0017d02def2eba34e893 Mon Sep 17 00:00:00 2001
 From: Dhruv Gadhavi <dg28gadhavi@gmail.com>
 Date: Tue, 11 Jul 2017 18:54:39 +0530
 Subject: [PATCH] MTK patches-NETD
@@ -6,8 +6,8 @@ Subject: [PATCH] MTK patches-NETD
 ---
  server/NatController.cpp    |  7 +++-
  server/NetworkController.h  |  1 -
- server/SoftapController.cpp | 82 ++++++++++++++++++++++++++++++++++++++-------
- 3 files changed, 75 insertions(+), 15 deletions(-)
+ server/SoftapController.cpp | 83 ++++++++++++++++++++++++++++++++++++++-------
+ 3 files changed, 76 insertions(+), 15 deletions(-)
 
 diff --git a/server/NatController.cpp b/server/NatController.cpp
 index cda8f5f..d8be096 100644
@@ -40,7 +40,7 @@ index 07e743c..195cdbd 100644
  
  #endif  // NETD_SERVER_NETWORK_CONTROLLER_H
 diff --git a/server/SoftapController.cpp b/server/SoftapController.cpp
-index 1c59ec3..76dcbee 100755
+index 1c59ec3..ea3a1f5 100755
 --- a/server/SoftapController.cpp
 +++ b/server/SoftapController.cpp
 @@ -37,6 +37,9 @@
@@ -53,16 +53,17 @@ index 1c59ec3..76dcbee 100755
  #include <netutils/ifc.h>
  #include <private/android_filesystem_config.h>
  #include "wifi.h"
-@@ -54,7 +57,7 @@ using android::base::WriteStringToFile;
+@@ -54,7 +57,8 @@ using android::base::WriteStringToFile;
  #endif
  
  #ifdef LIBWPA_CLIENT_EXISTS
 -std:: string hostapd_unix_file(StringPrintf("/data/misc/wifi/hostapd/wlan0"));
++//std:: string hostapd_unix_file(StringPrintf("/data/misc/wifi/hostapd/wlan0"));
 +std:: string hostapd_unix_file(StringPrintf("/data/misc/wifi/hostapd/ap0"));
  static const char HOSTAPD_DHCP_DIR[]    = "/data/misc/dhcp";
  #endif
  static const char HOSTAPD_CONF_FILE[]    = "/data/misc/wifi/hostapd.conf";
-@@ -265,6 +268,11 @@ int SoftapController::setSoftap(int argc, char *argv[]) {
+@@ -265,6 +269,11 @@ int SoftapController::setSoftap(int argc, char *argv[]) {
      int hidden = 0;
      int channel = AP_CHANNEL_DEFAULT;
  
@@ -74,7 +75,7 @@ index 1c59ec3..76dcbee 100755
      if (argc < 5) {
          ALOGE("Softap set is missing arguments. Please use:");
          ALOGE("softap <wlan iface> <SSID> <hidden/broadcast> <channel> <wpa2?-psk|open> <passphrase>");
-@@ -275,21 +283,69 @@ int SoftapController::setSoftap(int argc, char *argv[]) {
+@@ -275,21 +284,69 @@ int SoftapController::setSoftap(int argc, char *argv[]) {
          hidden = 1;
  
      if (argc >= 5) {
