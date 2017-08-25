@@ -123,3 +123,4 @@ allow init teei_config_device:chr_file { ioctl write };
 allow init teei_data_file:file append;
 allow init teei_rpmb_device:chr_file { ioctl write };
 allow init ccci_monitor_device:chr_file write;
+allow init nvram_device:blk_file write;

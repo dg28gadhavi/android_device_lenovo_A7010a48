@@ -11,3 +11,9 @@ allow healthd app_data_file:file write;
 
 # AVC Denials Fix
 allow healthd device:chr_file rw_file_perms;
+allow healthd self:capability mknod;
+allow healthd device:dir r_dir_perms;
+allow healthd device:dir add_name;
+allow healthd device:chr_file create;
+allow healthd device:dir remove_name;
+allow healthd device:chr_file { unlink };
