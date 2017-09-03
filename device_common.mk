@@ -181,6 +181,7 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     hostapd \
     wificond \
+    wifilogd \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf \
