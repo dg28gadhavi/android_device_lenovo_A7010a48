@@ -234,7 +234,7 @@ BOARD_SECCOMP_POLICY += device/lenovo/A7010a48/seccomp
 MTK_GPU_VERSION := mali midgard r12p1
 #MTK_GPU_VERSION := mali midgard r7p0
 MTK_HWC_SUPPORT := yes
-MTK_HWC_VERSION := 1.4.1
+MTK_HWC_VERSION := 1.5.0
 
 # Toolchain
 #TARGET_CUSTOM_TOOLCHAIN := true
