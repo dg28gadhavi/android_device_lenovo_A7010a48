@@ -176,9 +176,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
 
+# USB
  PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
+
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
 
 PRODUCT_PACKAGES += \
     charger \
