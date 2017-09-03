@@ -3,7 +3,7 @@
     "remote": "github",
     "repository": "dg28gadhavi/android_vendor_lenovo_A7010a48",
     "target_path": "vendor/lenovo/A7010a48",
-    "branch": "los-14.1"
+    "branch": "los-15.0"
   },
   {
     "remote": "github",
