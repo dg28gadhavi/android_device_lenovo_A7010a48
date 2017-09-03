@@ -159,6 +159,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl
+
 # WiFi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
