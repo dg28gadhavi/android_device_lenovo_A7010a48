@@ -1300,8 +1300,8 @@ service mediacodec /system/bin/mediacodec
     ioprio rt 4
 
 #lenovo-sw, chenzz3, TEEI-P2, begin
-service fingerprintd /system/bin/fingerprintd
-    class main
-    user system
-    group system
+#service fingerprintd /system/bin/fingerprintd
+#    class main
+#    user system
+#    group system
 #lenovo-sw, chenzz3, TEEI-P2, end    
