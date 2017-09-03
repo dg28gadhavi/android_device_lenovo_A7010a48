@@ -660,6 +660,10 @@ on boot
     chmod 0666 /sys/class/leds/torch/brightness
     chown system system /sys/class/leds/torch/brightness
     chown system system /sys/class/leds/flash/brightness
+
+# Wifi firmware reload path
+chown wifi wifi /sys/module/wlan/parameters/fwpath
+
 #lenovo.sw END wangsx3 add for leds sys node
     chown system system /sys/devices/system/cpu/cpufreq/hotplug/cpu_num_base
     chmod 0660 /sys/devices/system/cpu/cpufreq/hotplug/cpu_num_base
