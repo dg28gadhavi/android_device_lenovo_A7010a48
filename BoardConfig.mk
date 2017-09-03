@@ -236,6 +236,9 @@ MTK_GPU_VERSION := mali midgard r12p1
 MTK_HWC_SUPPORT := yes
 MTK_HWC_VERSION := 1.5.0
 
+# Renderer
+USE_OPENGL_RENDERER := true
+
 # Toolchain
 #TARGET_CUSTOM_TOOLCHAIN := true
 #TARGET_KERNEL_TC_SUFFIX := kernel-aospa
