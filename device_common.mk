@@ -202,6 +202,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl
 
+# Renderer
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
