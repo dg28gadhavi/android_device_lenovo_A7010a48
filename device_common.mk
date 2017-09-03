@@ -146,9 +146,13 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl
 
-#Camera
+# Camera
 PRODUCT_PACKAGES += \
     libcamera_parameters_ext
+
+PRODUCT_PACKAGES += \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl
 
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -218,7 +222,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
 
-#Fingerprint HAL
+# Fingerprint HAL
 PRODUCT_PACKAGES += \
    android.hardware.biometrics.fingerprint@2.1-service
 
