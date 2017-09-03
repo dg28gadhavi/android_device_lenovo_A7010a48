@@ -206,16 +206,13 @@ PRODUCT_PACKAGES += \
 		   
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	ro.mount.fs=EXT4 \
- ro.adb.secure=0 \
- ro.secure=0 \
  ro.allow.mock.location=0 \
- ro.debuggable=1 \
 	persist.service.acm.enable=0 \
 	ro.config.low_ram=false
 
 # IO Scheduler
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.io.scheduler=zen
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    sys.io.scheduler=zen
  
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
