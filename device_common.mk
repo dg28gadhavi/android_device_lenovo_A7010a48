@@ -255,9 +255,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=6 \
     dalvik.vm.image-dex2oat-threads=8
 
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
-ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
-ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+#ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.oem_unlock_supported=1
 #ADDITIONAL_DEFAULT_PROPERTIES += persist.logd.logpersistd=logcatd
 
@@ -265,9 +265,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 	
 PRODUCT_PROPERTY_OVERRIDES += \
-  service.adb.root=1 \
-  persist.service.adb.enable=1 \
-  persist.service.debuggable=1 \
   persist.sys.root_access=0 \
   persist.sys.usb.config=mtp,adb
 
