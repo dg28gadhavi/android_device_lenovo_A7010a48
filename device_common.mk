@@ -198,7 +198,10 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    Tag    
+    NfcNci \
+    nfc_nci.$(TARGET_DEVICE) \
+    Tag \
+    android.hardware.nfc@1.0-impl
     
 PRODUCT_PACKAGES += \
 	FMRadio \
