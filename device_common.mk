@@ -206,6 +206,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
 
+# Input
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
 #Fingerprint HAL
 PRODUCT_PACKAGES += \
     fingerprintd
