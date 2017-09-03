@@ -190,6 +190,10 @@ PRODUCT_PACKAGES += \
     libnl_2 \
     libion
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
+
 #Fingerprint HAL
 PRODUCT_PACKAGES += \
     fingerprintd
