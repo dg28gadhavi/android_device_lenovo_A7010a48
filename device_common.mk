@@ -172,7 +172,10 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf \
     lib_driver_cmd_mt66xx
-     
+
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+
  PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
