@@ -14,6 +14,9 @@ CCACHE_DIR:=$(LOCAL_PATH)/../../.ccache
 #USE_NINJA:=false
 #JACK_SERVER_VM_ARGUMENTS:="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx2560m"
 
+# USE CLANG
+USE_CLANG_PLATFORM_BUILD := true
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6753
 MTK_BOARD_PLATFORMS += mt6753
