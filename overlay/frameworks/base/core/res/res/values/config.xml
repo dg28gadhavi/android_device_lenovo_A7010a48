@@ -40,7 +40,7 @@
     <bool name="config_intrusiveNotificationLed">true</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <!-- <bool name="config_intrusiveBatteryLed">true</bool> -->
 
     <!-- Does the notification LED support multiple colors? Used to decide if the user can change the colors -->
     <!-- <bool name="config_multiColorNotificationLed">false</bool> -->
@@ -171,7 +171,7 @@
 	<item>255</item>
     </integer-array>
     
-    <integer name="config_buttonBrightnessSettingDefault">0</integer>  
+    <!-- <integer name="config_buttonBrightnessSettingDefault">0</integer> -->  
     
     <!-- Flag indicating if the user is notified when the mobile network access is restricted -->
     <bool name="config_user_notification_of_restrictied_mobile_access">false</bool>
@@ -209,7 +209,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">79</integer>
+   <!--  <integer name="config_deviceHardwareKeys">79</integer> -->
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -223,7 +223,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">79</integer>
+   <!-- <integer name="config_deviceHardwareWakeKeys">79</integer> -->
 
     
     <!-- Performance profiles -->
@@ -276,16 +276,16 @@
     <string translatable="false" name="config_radio_access_family">LTE | GSM | WCDMA</string>
     
     <!-- Whether to use TMO LTE singnal strength threshold -->
-    <bool name="config_regional_lte_singnal_threshold">true</bool>
+   <!--  <bool name="config_regional_lte_singnal_threshold">true</bool> -->
     
-    <integer-array name="lte_signal_strength_threshold">
+    <!-- <integer-array name="lte_signal_strength_threshold">
         <item>-140</item>
         <item>-125</item>
         <item>-120</item>
         <item>-115</item>
         <item>-105</item>
         <item>-44</item>
-    </integer-array>      
+    </integer-array> -->      
 
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">false</bool>
