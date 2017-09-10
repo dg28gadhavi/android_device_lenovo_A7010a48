@@ -381,4 +381,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    lights.mt6753
 
+#Prebuilt
+PRODUCT_PACKAGES += \
+     camera \
+     nfc
+
+PRODUCT_COPY_FILES += \
+device/lenovo/A7010a48/prebuilt/camera/libjni_cntinyplanet.so:/system/app/camera/lib/arm64/libjni_cntinyplanet.so \
+device/lenovo/A7010a48/prebuilt/camera/libjni_cnmosaic.so:/system/app/camera/lib/arm64/libjni_cnmosaic.so \
+device/lenovo/A7010a48/prebuilt/nfc/libnfc_mt6605_jni.so:/system/app/nfc/lib/arm64/libnfc_mt6605_jni.so \
+device/lenovo/A7010a48/prebuilt/nfc/libmtknfc_dynamic_load_jni.so:/system/app/nfc/lib/arm64/libmtknfc_dynamic_load_jni.so
+
 endif
