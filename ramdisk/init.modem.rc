@@ -57,8 +57,9 @@ service muxreport-daemon /system/bin/muxreport
     disabled
     oneshot
 
-service ril-daemon-mtk /vendor/bin/hw/bin/mtkrild
+service ril-daemon-mtk /vendor/bin/hw/mtkrild
     class core
+
 #    socket rild stream 660 root radio
     socket rild2 stream 660 root radio
     socket rild3 stream 660 root radio
@@ -77,8 +78,9 @@ service ril-daemon-mtk /vendor/bin/hw/bin/mtkrild
     socket sap_uim_socket2 stream 660 bluetooth bluetooth
     socket sap_uim_socket3 stream 660 bluetooth bluetooth
     socket sap_uim_socket4 stream 660 bluetooth bluetooth
-    user root
+    user radio
     group radio cache inet misc audio sdcard_r sdcard_rw log system
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
     disabled
     oneshot
 
