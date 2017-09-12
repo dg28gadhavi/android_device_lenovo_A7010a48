@@ -262,8 +262,7 @@ PRODUCT_PACKAGES += \
    
 PRODUCT_PACKAGES += \
     YGPS \
-    Jelly \
-    EngineerMode
+    Jelly
 
 # Power
 PRODUCT_PACKAGES += \
