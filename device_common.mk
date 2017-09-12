@@ -278,9 +278,9 @@ PRODUCT_PACKAGES += \
     Tag \
     android.hardware.nfc@1.0-impl
     
-PRODUCT_PACKAGES += \
-	FMRadio \
-	libfmjni
+#PRODUCT_PACKAGES += \
+#	FMRadio \
+#	libfmjni
 		   
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	ro.mount.fs=EXT4 \
