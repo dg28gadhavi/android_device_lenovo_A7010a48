@@ -392,4 +392,8 @@ device/lenovo/A7010a48/prebuilt/camera/libjni_cnmosaic.so:/system/app/camera/lib
 device/lenovo/A7010a48/prebuilt/nfc/libnfc_mt6605_jni.so:/system/app/nfc/lib/arm64/libnfc_mt6605_jni.so \
 device/lenovo/A7010a48/prebuilt/nfc/libmtknfc_dynamic_load_jni.so:/system/app/nfc/lib/arm64/libmtknfc_dynamic_load_jni.so
 
+# Seccomp
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy
+
 endif

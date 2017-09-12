@@ -231,7 +231,7 @@ TARGET_NO_RECOVERY := true
 #    device/lenovo/A7010a48/sepolicy
     
 # Seccomp filter
-BOARD_SECCOMP_POLICY += device/lenovo/A7010a48/seccomp
+#BOARD_SECCOMP_POLICY += device/lenovo/A7010a48/seccomp
     
 # Graphics
 MTK_GPU_VERSION := mali midgard r12p1
