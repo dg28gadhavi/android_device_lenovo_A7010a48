@@ -12,11 +12,14 @@ LOCAL_SRC_FILES := \
     icu55.c \
     icu56.c \
     ssl.c \
+    lenovo_gui.c \
+    cam.cpp \
     mtk_asc.cpp \
     mtk_audio.cpp \
     mtk_fence.cpp \
     mtk_omx.cpp \
-    mtk_ui.cpp
+    mtk_ui.cpp \
+    lenovo_atomic.cpp
 
 # only for 32bit libraries
 LOCAL_SRC_FILES_32 := mtk_string.cpp
@@ -26,7 +29,7 @@ LOCAL_SRC_FILES_32 += mtk_wvm.cpp
 LOCAL_SRC_FILES_64 := mtk_parcel.cpp
 LOCAL_SRC_FILES_64 += mtk_wvm64.cpp
 
-LOCAL_SHARED_LIBRARIES := libbinder liblog libgui libui libicuuc libicui18n libmedia libssl libcrypto libstagefright_foundation libutils
+LOCAL_SHARED_LIBRARIES := libbinder liblog libgui libui libicuuc libicui18n libmedia libssl libcrypto libstagefright_foundation libutils libcutils libsensor libmediautils
 LOCAL_MODULE := mtk_symbols
 LOCAL_MODULE_TAGS := optional
 
