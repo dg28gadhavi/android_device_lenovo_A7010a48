@@ -582,7 +582,7 @@ on property:ro.debuggable=1
 service adbd /sbin/adbd --root_seclabel=u:r:su:s0
     class core
     socket adbd stream 660 system system
-    disabled
+   # disabled
     seclabel u:r:adbd:s0
 
 #INTERNAL_START
