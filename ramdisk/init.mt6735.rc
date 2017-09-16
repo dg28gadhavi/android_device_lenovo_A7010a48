@@ -24,6 +24,8 @@ on early-init
     chmod 0755 /sys/kernel/debug
 
 on init
+export LD_PRELOAD "/system/lib/mtk_symbols.so  /system/lib64/mtk_symbols.so"
+
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
    
