@@ -11,7 +11,7 @@ import /init.usb.configfs.rc
 import /init.${ro.zygote}.rc
 
 # Include CM's extra init file
-import /init.cm.rc
+import /init.lineage.rc
 
 
 on early-init
