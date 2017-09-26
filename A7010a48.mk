@@ -133,16 +133,20 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
-    libaudio-resampler
-    
+    libaudio-resampler \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.broadcastradio@1.0-impl \
+    android.hardware.soundtrigger@2.0-impl
+
 PRODUCT_PACKAGES += \
     libtinyxml \
     libtinyalsa \
     libtinycompress
 
 #Camera
-PRODUCT_PACKAGES += \
-    libcamera_parameters_ext
+#PRODUCT_PACKAGES += \
+#    libcamera_parameters_ext
 
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -154,9 +158,10 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf \
-    lib_driver_cmd_mt66xx
-     
- PRODUCT_PACKAGES += \
+    lib_driver_cmd_mt66xx \
+    android.hardware.wifi@1.0-service 
+ 
+PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
 
@@ -182,8 +187,23 @@ PRODUCT_PACKAGES += \
     mtkrild \
     mtk-ril
 
+PRODUCT_COPY_FILES += \
+    device/lenovo/A7010a48/manifest.xml:system/vendor/manifest.xml
+
 PRODUCT_PACKAGES += \
     mtk_symbols
+
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.light@2.0-impl \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.memtrack@1.0-impl
 
 # Power
 PRODUCT_PACKAGES += \
