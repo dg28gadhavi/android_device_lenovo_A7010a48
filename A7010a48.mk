@@ -167,14 +167,14 @@ PRODUCT_PACKAGES += \
     libion
 
 #Fingerprint HAL
-PRODUCT_PACKAGES += \
-    fingerprintd
+#PRODUCT_PACKAGES += \
+ #   fingerprintd
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
+#PRODUCT_COPY_FILES += \
+ #   frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
-PRODUCT_PACKAGES += \
-    fingerprint.default
+#PRODUCT_PACKAGES += \
+#    fingerprint.default
 
 # RIL	
 PRODUCT_PACKAGES += \
@@ -184,11 +184,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     mtk_symbols
-   
-PRODUCT_PACKAGES += \
-    YGPS \
-    Jelly \
-    EngineerMode
 
 # Power
 PRODUCT_PACKAGES += \
@@ -212,21 +207,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.service.acm.enable=0 \
 	ro.config.low_ram=false
 
-# IO Scheduler
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.io.scheduler=zen
- 
-# Media
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.stagefright.legacyencoder=0
- 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0
-
-# Storage
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.sdcardfs=true
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -270,18 +253,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   persist.sys.root_access=0 \
   persist.sys.usb.config=mtp,adb
 
-
-# Keyhandler package
-PRODUCT_PACKAGES += \
-    com.cyanogenmod.keyhandler
-
-PRODUCT_SYSTEM_SERVER_JARS += com.cyanogenmod.keyhandler
-
-# Never dexopt the keyhandler
-$(call add-product-dex-preopt-module-config,com.cyanogenmod.keyhandler,disable)
-
-
-
 # Add for ANT+
 ifeq ($(strip $(MTK_ANT_SUPPORT)), yes)
 
@@ -300,11 +271,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
 
-#Cmactions
-PRODUCT_PACKAGES += \
-    CMActions
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+PRODUCT_NAME := full_A7010a48
+PRODUCT_DEVICE := A7010a48
 
-#Liblights
+# lights
 PRODUCT_PACKAGES += \
    lights.mt6753
 
