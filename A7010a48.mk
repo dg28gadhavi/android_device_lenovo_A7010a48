@@ -254,22 +254,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
   persist.sys.usb.config=mtp,adb
 
 # Add for ANT+
-ifeq ($(strip $(MTK_ANT_SUPPORT)), yes)
+#ifeq ($(strip $(MTK_ANT_SUPPORT)), yes)#
 
-BOARD_ANT_WIRELESS_DEVICE :="vfs-prerelease"
+#BOARD_ANT_WIRELESS_DEVICE :="vfs-prerelease"
 
-      PRODUCT_PACKAGES += com.dsi.ant.antradio_library \
-                          AntHalService \
-                          ANT_RAM_CODE_E1.BIN \
-                          ANT_RAM_CODE_E2.BIN
+#      PRODUCT_PACKAGES += com.dsi.ant.antradio_library \
+#                          AntHalService \
+#                          ANT_RAM_CODE_E1.BIN \
+#                          ANT_RAM_CODE_E2.BIN
                           
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ANT/prebuild/libantradio32.so:system/lib/libantradio.so \
-    $(LOCAL_PATH)/ANT/prebuild/libantradio64.so:system/lib64/libantradio.so \
-    $(LOCAL_PATH)/ANT/prebuild/antradio_app:system/xbin/antradio_app
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/ANT/prebuild/libantradio32.so:system/lib/libantradio.so \
+#    $(LOCAL_PATH)/ANT/prebuild/libantradio64.so:system/lib64/libantradio.so \
+#    $(LOCAL_PATH)/ANT/prebuild/antradio_app:system/xbin/antradio_app
 
-PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
+#PRODUCT_COPY_FILES += \
+#    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_A7010a48
